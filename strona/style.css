@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #34C759;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #2E865F;
+}
+
+.matrix-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('matrix.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: auto; /* set width to auto to make it responsive */
+    max-width: 200px; /* set max-width to limit the width */
+}
+
+.square:hover {
+    background-color: #1b1919;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.square > div {
+    text-align: center;
+    padding: 10px;
+}
+
+.contact-form {
+    position: relative;
+    max-width: 800px;
+    top: 20%;
+    left: 20%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 550px;
+    width: 400px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #34C759;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #2E865F;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 90%;
+    }
+}
+
+.social-links-container {
+    background-color: #333; /* dark background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* stack links vertically */
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column; /* stack links vertically */
+    align-items: center;
+}
+
+.social-links a {
+    margin-bottom: 20px; /* add space between links */
+    color: #fff; /* white text color */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.social-links img {
+    width: 72px; /* 3 times larger */
+    height: 72px; /* 3 times larger */
+    margin-right: 10px;
+}
+
+.social-links span {
+    margin-right: 10px;
+}
+
+/* Make all elements start from the left */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: left;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    text-align: left;
+}
+
+.social-links-container {
+    text-align: left;
+}
+
+.footer {
+    text-align: left;
+}

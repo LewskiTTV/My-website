@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </nav>
+    <div class="matrix-background"></div>
+    <main>
+        <div class="social-links-container">
+            <div class="social-links">
+                <a href="https://github.com/LewskiTTV" target="_blank">
+                    <img src="github.png" alt="GitHub" width="72" height="72">
+                    <span>Lewski2006</span>
+                </a>
+                <a href="https://discord.gg/ggKMWcEx" target="_blank">
+                    <img src="discord.png" alt="Discord" width="72" height="72">
+                    <span>Lewski</span>
+                </a>
+                <a href="mailto:lewski2006@gmail.com">
+                    <img src="gmail.jpg" alt="Email" width="72" height="72">
+                    <span>lewski2006@gmail.com</span>
+                </a>
+            </div>
+        </div>
+        <!-- rest of your main content here -->
+    </main>
+    <footer class="footer">
+        <p id="copyright">&copy; <span id="year"></span> My website. All rights reserved.</p>
+    </footer>
+    <script>
+        const yearElement = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = currentYear;
+    </script>
+</body>
+</html>
